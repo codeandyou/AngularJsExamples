@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>AngularJS Routing Example</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+      <script src="app.js"></script>
+  </head>
+
+  <body ng-app="routingApp">
+
+    <div class="container">
+		<div class="row">
+
+		<div class="col-md-9">
+          <h1>  AngularJS Routing Example</h1>
+
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th></th><th>Customer Id</th><th>Customer Name</th><th></th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>1</td><td>1111</td><td>Ravi</td>
+				<td><a href="#CustomerDetails/1001/Ravi">Details</a></td>
+			  </tr>
+			  <tr>
+				<td>2</td><td>2222</td><td>Dinesh</td>
+				<td><a href="#CustomerDetails/1002/Dinesh">Details</a></td>
+			  </tr>
+			  <tr>
+				<td>3</td><td>3333</td><td>Raj</td>
+				<td><a href="#CustomerDetails/1003/Raj">Details</a></td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  	<div ng-view></div>
+
+		</div>
+
+		</div>
+
+    </div>
+  </body>
+</html>
